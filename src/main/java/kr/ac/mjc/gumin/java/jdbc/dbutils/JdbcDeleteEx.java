@@ -8,7 +8,7 @@ public class JdbcDeleteEx {
 		BoardDao boardDao = new BoardDao();
 		
 		
-		String id = "22";
+		String id = "27";
 		int updateCount = boardDao.deleteBoard(id);
 		
 		if(updateCount>0) {

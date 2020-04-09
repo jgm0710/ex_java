@@ -5,7 +5,7 @@ public class JdbcUpdateEx {
 	public static void main(String[] args) {
 		BoardDao boardDao = new BoardDao();
 		
-		Board board = new Board("21", "2빠", "교수님 안녕하세요.", null, "정구민", "3");
+		Board board = new Board("27", "2빠", "교수님 안녕하세요.", null, "정구민", "3");
 		
 		int updateCount = boardDao.updateBoard(board);
 		

@@ -18,8 +18,8 @@ public class BoardDao {
 	public List<Board> getBoardList() {
 		return dbUtils.list(LIST_BOARDS, (rs)->{
 			Board board = new Board();
-			board.setSeq("seq");
-			board.setTitle(rs.getString("seq"));
+			board.setSeq(rs.getString("seq"));
+			board.setTitle(rs.getString("title"));
 			board.setContent(rs.getString("content"));
 			board.setRegdate(rs.getString("regdate"));
 			board.setWriter(rs.getString("writer"));
@@ -32,8 +32,8 @@ public class BoardDao {
 	public Board getBoard(String id) {
 		return dbUtils.get(GET_BOARD, (rs)->{
 			Board board = new Board();
-			board.setSeq("seq");
-			board.setTitle(rs.getString("seq"));
+			board.setSeq(rs.getString("seq"));
+			board.setTitle(rs.getString("title"));
 			board.setContent(rs.getString("content"));
 			board.setRegdate(rs.getString("regdate"));
 			board.setWriter(rs.getString("writer"));
