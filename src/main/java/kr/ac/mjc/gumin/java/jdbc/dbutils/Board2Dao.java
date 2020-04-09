@@ -12,7 +12,7 @@ public class Board2Dao {
 	private final String DELETE_BOARD2S= "delete from board where id=? ";
 
 	//DbUtils dbUtils = new DbUtils(new MariaDbDataSource("jdbc:mariadb://localhost:3306/jdbc?user=jdbc&password=javaprogramming"));
-	DbUtils dbUtils = new DbUtils(new MariaDbDataSource(" jdbc:mariadb://irafe.com:3306/jdbc?user=jdbc&password=javaprogramming"));
+	DbUtils dbUtils = new DbUtils(new MariaDbDataSource("jdbc:mariadb://irafe.com:3306/jdbc?user=jdbc&password=javaprogramming"));
 	
 	
 	public List<Board2> getBoard2List() {
