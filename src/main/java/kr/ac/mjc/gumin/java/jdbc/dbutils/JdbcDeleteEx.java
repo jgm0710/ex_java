@@ -5,20 +5,21 @@ import java.util.List;
 public class JdbcDeleteEx {
 
 	public static void main(String[] args) {
-		Board2Dao board2Dao = new Board2Dao();
+		BoardDao boardDao = new BoardDao();
 		
-		String id = "6";
-		int updateCount = board2Dao.deleteBoard2(id);
+		
+		String id = "22";
+		int updateCount = boardDao.deleteBoard(id);
 		
 		if(updateCount>0) {
 			System.out.println("보드를 삭제 했습니다. id = "+id);
 			System.out.println("남은 보드 출력 ");
 			
-			List<Board2> board2List = board2Dao.getBoard2List();
+			List<Board> boardList = boardDao.getBoardList();
 
-			if (!board2List.isEmpty()) {
-				for (Board2 board2 : board2List) {
-					System.out.println(board2);
+			if (!boardList.isEmpty()) {
+				for (Board board : boardList) {
+					System.out.println(board);
 				}
 			}
 			else {

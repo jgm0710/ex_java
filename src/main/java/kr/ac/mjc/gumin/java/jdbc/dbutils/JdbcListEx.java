@@ -5,13 +5,13 @@ import java.util.List;
 public class JdbcListEx {
 
 	public static void main(String[] args) {
-		Board2Dao board2Dao = new Board2Dao();
+		BoardDao boardDao = new BoardDao();
 
-		List<Board2> board2List = board2Dao.getBoard2List();
+		List<Board> boardList = boardDao.getBoardList();
 
-		if (!board2List.isEmpty()) {
-			for (Board2 board2 : board2List) {
-				System.out.println(board2);
+		if (!boardList.isEmpty()) {
+			for (Board board : boardList) {
+				System.out.println(board);
 			}
 		}
 		else {

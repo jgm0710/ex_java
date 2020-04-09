@@ -3,14 +3,14 @@ package kr.ac.mjc.gumin.java.jdbc.dbutils;
 public class JdbcGetEx {
 
 	public static void main(String[] args) {
-		Board2Dao board2Dao = new Board2Dao();
+		BoardDao boardDao = new BoardDao();
 
 		String id = "6";
 
-		Board2 board2 = board2Dao.getBoard2(id);
+		Board board = boardDao.getBoard(id);
 
-		if (board2 != null) {
-			System.out.println(board2);
+		if (board != null) {
+			System.out.println(board);
 		}
 		else {
 			System.out.println("해당 id의 보드가 없습니다. \nid : "+id);
