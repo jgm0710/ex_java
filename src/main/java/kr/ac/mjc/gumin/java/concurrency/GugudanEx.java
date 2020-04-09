@@ -1,4 +1,4 @@
-package kr.ac.mjc.gumin.java.thread;
+package kr.ac.mjc.gumin.java.concurrency;
 
 public class GugudanEx {
 
